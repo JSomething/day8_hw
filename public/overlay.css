@@ -43,25 +43,31 @@ li {
 }
 .menus {
 	margin-top: 100px;
-	margin-left: 80px;
-	margin-right: 80px;
 	font-size: 30;
 }
 
 .menu_right {
 	float: right;
+	text-align: right;
+	/*margin-left: 80px;*/
 }
 
 .menu_left {
 	float: left;
+	text-align: left;
+	/*margin-right: 80px;*/
 }
 
 .pacer_nav_right {
 	list-style-type: none;
-
+	text-align: right;
 }
 
 .pacer_nav_left {
 	list-style-type: none;
+	text-align: left;
+}
 
+.clear {
+	clear: both;
 }

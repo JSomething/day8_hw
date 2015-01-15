@@ -1,0 +1,20 @@
+body {
+  background-image: url("pacer-overlay.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 20%;
+  background-position-y: 90%;
+  background-size: cover;
+  color: #fff;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.7);
+}
+
+.suspect_lister {
+	margin-top: 800;
+	text-align: left;
+}
+
+.suspect_list {
+	list-style-type: none;
+}

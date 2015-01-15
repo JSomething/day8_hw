@@ -8,22 +8,67 @@ get '/' do
 end
 
 get '/history' do
-	erb :history, layout: :format
+	erb :history, layout: :sub
+end
+
+get '/gallery' do
+	erb :gallery, layout: :sub
 end
 
 get '/dealers' do
-	erb :history, layout: :format
+	erb :dealers, layout: :sub
 end
 
-get '/history' do
-	erb :index, layout: :format
+# get '/dealers' do
+# 	@dealerlist = [
+# 	{
+# 		name: Faker::Name.name,
+# 		city: Faker::Address.city,
+# 		state: Faker::Address.state,
+# 		company: Faker::Company.name,
+# 		compsuffix: Faker::Company.suffix,
+# 		phone: Faker::PhoneNumber.cell_phone
+# 	},
+# 	{
+# 		name: Faker::Name.name,
+# 		city: Faker::Address.city,
+# 		state: Faker::Address.state,
+# 		company: Faker::Company.name,
+# 		compsuffix: Faker::Company.suffix,
+# 		phone: Faker::PhoneNumber.cell_phone
+# 	},
+# 	{
+# 		name: Faker::Name.name,
+# 		city: Faker::Address.city,
+# 		state: Faker::Address.state,
+# 		company: Faker::Company.name,
+# 		compsuffix: Faker::Company.suffix,
+# 		phone: Faker::PhoneNumber.cell_phone
+# 	}
+#  ]
+# 	erb :dealers, layout: :sub
+# end
+
+get '/testimonials' do
+	erb :testimonials, layout: :sub
 end
 
-
-# get '/form' do
-# 	erb :form, layout: :format
-# end
-
-# post '/form' do
-#   "Your input was '#{params[:message]}'"
-# end
+get '/suspects' do
+ @suspects = [
+ 	{
+ 		name: Faker::Name.name,
+ 		address_street: Faker::Address.street_name, 
+ 		address_city: Faker::Address.city,
+ 		advice: Faker::Hacker.say_something_smart,
+ 		phone: Faker::PhoneNumber.cell_phone
+ 	},
+ 	{
+ 		name: Faker::Name.name,
+ 		address_street: Faker::Address.street_name, 
+ 		address_city: Faker::Address.city,
+ 		advice: Faker::Hacker.say_something_smart,
+ 		phone: Faker::PhoneNumber.cell_phone
+ 	}
+ ]
+ erb :suspects, layout: :sub
+end
