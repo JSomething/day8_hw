@@ -1,10 +1,15 @@
-<div class="suspect_lister">
-<% @suspects.each do |suspect| %>
-	<ul class="suspect_list">
-		<li>Name: <%= suspect[:name] %></li>
-		<li>Address: <%= suspect[:address_street] %>, <%= suspect[:address_city] %>
-		</li>
-		<li>Sage Advice: <%= suspect[:advice] %>
-	</ul>
-<% end %>
+<div class="container">
+
+	<h3>Contact our reputable dealers:</h3>
+	<div class="dealers">
+	<% @dealerlist.each do |dealer| %>
+		<ul class="dealer">
+			<li><%= dealer[:name] %></li>
+			<li><%= dealer[:company] %> <%= dealer[:compsuffix] %></li>
+			<li><%= dealer[:city] %>, <%= dealer[:state] %></li>
+			<li><%= dealer[:phone] %></li>
+		</ul>
+ 	<% end %>
+	</div>
+
 </div>

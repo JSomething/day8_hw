@@ -1,0 +1,30 @@
+<div class="container">
+
+	<h3>Contact our reputable dealers:</h3>
+	<div class="dealers">
+	<%= @dealer_list.each do |dealer| %>
+		<ul class="dealer">
+			<li><%= dealer[:name] %></li>
+			<li><%= dealer[:company] %> <%= dealer[:compsuffix] %></li>
+			<li><%= dealer[:city] %>, <%= dealer[:state] %></li>
+			<li><%= dealer[:phone] %></li>
+		</ul>
+
+		<ul class="dealer">
+			<li><%= dealer_list[:name] %></li>
+			<li><%= dealer_list[:company] %> <%= dealer_list[:compsuffix] %></li>
+			<li><%= dealer_list[:city] %>, <%= dealer_list[:state] %></li>
+			<li><%= dealer_list[:phone] %></li>
+		</ul>
+
+		<ul class="dealer">
+			<li><%= dealer_list[:name] %></li>
+			<li><%= dealer_list[:company] %> <%= dealer_list[:compsuffix] %></li>
+			<li><%= dealer_list[:city] %>, <%= dealer_list[:state] %></li>
+			<li><%= dealer_list[:phone] %></li>
+		</ul>
+		
+ 	<% end %>
+	</div>
+
+</div>

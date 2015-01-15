@@ -13,41 +13,42 @@ end
 
 get '/gallery' do
 	erb :gallery, layout: :sub
-end
-
-get '/dealers' do
-	erb :dealers, layout: :sub
+	image_tag("pacer1.jpg", size: "1288x942", alt: "Image 1")
 end
 
 # get '/dealers' do
-# 	@dealerlist = [
-# 	{
-# 		name: Faker::Name.name,
-# 		city: Faker::Address.city,
-# 		state: Faker::Address.state,
-# 		company: Faker::Company.name,
-# 		compsuffix: Faker::Company.suffix,
-# 		phone: Faker::PhoneNumber.cell_phone
-# 	},
-# 	{
-# 		name: Faker::Name.name,
-# 		city: Faker::Address.city,
-# 		state: Faker::Address.state,
-# 		company: Faker::Company.name,
-# 		compsuffix: Faker::Company.suffix,
-# 		phone: Faker::PhoneNumber.cell_phone
-# 	},
-# 	{
-# 		name: Faker::Name.name,
-# 		city: Faker::Address.city,
-# 		state: Faker::Address.state,
-# 		company: Faker::Company.name,
-# 		compsuffix: Faker::Company.suffix,
-# 		phone: Faker::PhoneNumber.cell_phone
-# 	}
-#  ]
 # 	erb :dealers, layout: :sub
 # end
+
+get '/dealers' do
+	@dealerlist = [
+	{
+		name: Faker::Name.name,
+		city: Faker::Address.city,
+		state: Faker::Address.state,
+		company: Faker::Company.name,
+		compsuffix: Faker::Company.suffix,
+		phone: Faker::PhoneNumber.cell_phone
+	},
+	{
+		name: Faker::Name.name,
+		city: Faker::Address.city,
+		state: Faker::Address.state,
+		company: Faker::Company.name,
+		compsuffix: Faker::Company.suffix,
+		phone: Faker::PhoneNumber.cell_phone
+	},
+	{
+		name: Faker::Name.name,
+		city: Faker::Address.city,
+		state: Faker::Address.state,
+		company: Faker::Company.name,
+		compsuffix: Faker::Company.suffix,
+		phone: Faker::PhoneNumber.cell_phone
+	}
+ ]
+	erb :dealers, layout: :sub
+end
 
 get '/testimonials' do
 	erb :testimonials, layout: :sub
