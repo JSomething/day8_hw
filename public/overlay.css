@@ -1,0 +1,44 @@
+body {
+  background-image: url("pacer-overlay.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 20%;
+  background-position-y: 90%;
+  background-size: cover;
+  color: #fff;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.7);
+}
+
+.intro h3{
+	font-size: 80px;
+	text-align: center;
+	padding-top: 30%;
+	text-shadow:
+   -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+     1px 1px 0 #000000;
+}
+.menus {
+	padding-top: 100px;
+	padding-left: 80px;
+	padding-right: 80px;
+	font-size: 30;
+}
+
+.menu_right {
+	float: right;
+}
+
+.menu_left {
+	float: left;
+}
+
+.pacer_nav_right {
+
+}
+
+.pacer_nav_left {
+
+}
